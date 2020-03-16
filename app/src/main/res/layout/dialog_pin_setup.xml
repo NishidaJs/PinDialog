@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please enter your 6-digit PIN to proceed."
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:id="@+id/tooltip"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/input1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textAlignment="center"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/input2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textAlignment="center"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/input3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textAlignment="center"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/input4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textAlignment="center"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/input5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textAlignment="center"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/input6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textAlignment="center"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/inputKeypad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>
